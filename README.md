@@ -3,7 +3,7 @@
 This project develops machine-learning methods for background subtraction in heavy-ion collisions, using data from the ALICE experiment at CERN. It follows two stages. The first is a neural network trained on Monte Carlo truth labels, which improves the correction substantially but depends on the event generator. The second is a graph neural network (GNN) trained on the output of a classical correction method, which removes that dependence.
 
 <p align="center">
-  <img src="GNN_ICS.png" width="650" alt="Residual distributions for the area-based, ICS and GNN corrections">
+  <img src="GNN_ICS.png" width="550" alt="Residual distributions for the area-based, ICS and GNN corrections">
 </p>
 
 ## Motivation
@@ -18,7 +18,7 @@ The standard **area-based correction** estimates the average background density 
 
 A fully connected network is trained on PYTHIA jets embedded in Pb–Pb events, where the true jet momentum is known. It learns to predict the true jet pT from reconstructed jet features, and it clearly improves on the area-based correction.
 <p align="center">
-  <img src="Training_on_truth_labels.png" width="650" alt="Residual distributions for the area-based and NN corrections">
+  <img src="Training_on_truth_labels.png" width="550" alt="Residual distributions for the area-based and NN corrections">
 </p>.
 
 The limitation is **generator dependence**. The network learns whatever the event generator assumes about jet fragmentation and the background, and those assumptions may not match real data. This model dependence is difficult to quantify, and it becomes a systematic uncertainty on the final measurement.
