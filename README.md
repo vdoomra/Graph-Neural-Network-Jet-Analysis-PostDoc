@@ -1,6 +1,6 @@
 # Graph Neural Network for Particle-Level Background Correction
 
-[GNN_ICS.png]
+![GNN performance comparison](GNN_ICS.png)
 
 ## Results
 
