@@ -1,6 +1,10 @@
 # Graph Neural Network for Particle-Level Background Correction
 
-This project develops a graph neural network (GNN) to improve particle-level background correction in large-scale collision datasets. A conventional, data-driven correction method (Iterative Constituent Subtraction (ICS)) is first established to provide a model-independent baseline applicable to real data, after which the GNN learns to further reduce residual errors and long-tail outliers. The approach improves measurement accuracy by approximately 2.4× across 2+ TB of data. The study uses the Min Bias PbPb 0-10% data collection by the ALICE Experiment at CERN and the Monte Carlo pp data anchored to the min bias PbPb dataset.
+This project develops a machine-learning approach to improve background correction in large-scale collision datasets. The analysis progresses through three stages:
+Area-based correction: A standard method that estimates the average background contribution from the surrounding event and subtracts it from each particle.
+ICS correction: A more refined, particle-level correction method developed to better account for local variations in the background.
+Graph neural network: A GNN is trained to further reduce the residual errors left by the ICS method by learning relationships between nearby particles.
+The GNN approach improves measurement accuracy by approximately 2.4× across 2+ TB of data, while reducing residual errors and long-tail outliers. The study uses the Min Bias PbPb 0-10% data collection by the ALICE Experiment at CERN and the Monte Carlo pp data anchored to the min bias PbPb dataset.
 
 ![GNN performance comparison](GNN_ICS.png)
 
