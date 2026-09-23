@@ -16,7 +16,9 @@ The standard **area-based correction** estimates the average background density 
 
 ### 1. Neural network trained on truth labels
 
-A fully connected network is trained on PYTHIA jets embedded in Pb–Pb events, where the true jet momentum is known. It learns to predict the true jet pT from reconstructed jet features, and it clearly improves on the area-based correction.
+A fully connected network is trained on PYTHIA jets embedded in Pb–Pb events, where the true jet momentum is known. It learns to predict the true jet pT from reconstructed jet features, and it clearly improves on the area-based correction <p align="center">
+  <img src="Training_on_truth_labels.png" width="650" alt="Residual distributions for the area-based and NN corrections">
+</p>.
 
 The limitation is **generator dependence**. The network learns whatever the event generator assumes about jet fragmentation and the background, and those assumptions may not match real data. This model dependence is difficult to quantify, and it becomes a systematic uncertainty on the final measurement.
 
