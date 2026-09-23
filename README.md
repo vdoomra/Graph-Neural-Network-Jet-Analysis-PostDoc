@@ -8,7 +8,7 @@ The GNN approach improves measurement accuracy by approximately 2.4× across 2+ 
 
 The study uses the Min Bias PbPb 0-10% data collection by the ALICE Experiment at CERN and the Monte Carlo pp data anchored to the min bias PbPb dataset.
 
-<img src="figures/gnn_performance.png" width="700">
+<img src="GNN_ICS.png" width="700">
 
 ## Results
 
